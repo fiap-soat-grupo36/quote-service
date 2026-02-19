@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quote-service-config
+data:
+  SPRING_PROFILES_ACTIVE: "k8s"
+  SERVER_PORT: "8085"
+  EUREKA_URL: "http://eureka-service:8761/eureka/"
+  DB_URL: "jdbc:postgresql://postgres:5432/oficina_quote_db"
+  DB_USERNAME: "postgres"
+  DDL_AUTO: "update"
+  SQL_INIT_MODE: "never"
+  AWS_REGION: "us-east-1"
+  AWS_ENDPOINT_URL: ""
