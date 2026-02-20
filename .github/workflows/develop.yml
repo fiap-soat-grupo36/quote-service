@@ -6,7 +6,6 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ needs.service-readiness.outputs.ready == 'true' }}
     permissions:
       contents: read
       packages: read
