@@ -42,8 +42,11 @@
     <repositories>
         <repository>
             <id>github</id>
-            <name>GitHub Packages - Shared Library</name>
+            <name>GitHub Packages - shared-library</name>
             <url>https://maven.pkg.github.com/fiap-soat-grupo36/shared-library</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
